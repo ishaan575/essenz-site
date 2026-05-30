@@ -379,6 +379,11 @@ h2 {
   color: var(--amber);
 }
 
+.tag.rose {
+  background: rgba(195, 70, 117, 0.12);
+  color: #b93870;
+}
+
 .product-info h3 {
   margin: 0;
   font-size: 1.28rem;
@@ -406,6 +411,97 @@ h2 {
 .price-row a {
   color: var(--green);
   white-space: nowrap;
+}
+
+.soap-card .product-image {
+  min-height: 230px;
+}
+
+.soap-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.soap-image::before,
+.soap-image::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  opacity: 0.78;
+}
+
+.soap-image::before {
+  width: 160px;
+  height: 160px;
+  top: -54px;
+  right: -46px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.soap-image::after {
+  width: 120px;
+  height: 120px;
+  left: -42px;
+  bottom: -34px;
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.rose-soap {
+  background: linear-gradient(145deg, #ffe8ef, #f6a4bf);
+}
+
+.neem-soap {
+  background: linear-gradient(145deg, #edf7de, #7acb81);
+}
+
+.aloe-soap {
+  background: linear-gradient(145deg, #e1f6f1, #70cfc0);
+}
+
+.sandal-soap {
+  background: linear-gradient(145deg, #fff0d5, #d99a50);
+}
+
+.soap-pack {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: min(240px, 86%);
+  min-height: 136px;
+  align-content: center;
+  gap: 8px;
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.64);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.14), transparent 36%),
+    rgba(255, 255, 255, 0.42);
+  box-shadow: 0 18px 34px rgba(16, 37, 29, 0.16);
+  color: var(--ink);
+  text-align: center;
+  transform: rotate(-4deg);
+}
+
+.soap-pack span,
+.soap-pack small {
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.soap-pack span {
+  font-size: 0.74rem;
+}
+
+.soap-pack strong {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.55rem;
+  line-height: 1;
+}
+
+.soap-pack small {
+  color: var(--muted);
+  font-size: 0.68rem;
 }
 
 .split-section {
